@@ -1,4 +1,4 @@
-ARGoS README
+README
 =============
 :Author: Danesh Tarapore
 :Email:  daneshtarapore@gmail.com
@@ -18,7 +18,7 @@ module, and bumper sensors on the front hull of the ASV.
 Downloading ARGoS-ASV
 ------------------
 
-You can download the development sources of ARGoS-ASV through git:
+You can download the sources of ARGoS-ASV through git:
 
  $ git clone https://github.com/daneshtarapore/argos3-asv.git argos-asv
 
@@ -28,10 +28,22 @@ Compiling ARGoS
 Requirements and compiling instructions
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-The requirements and compiling instructions for ARGoS-ASV are the same as that of the ARGoS simulator, 
+The requirements and compiling instructions for ARGoS-ASV follow that of the ARGoS simulator source, 
 described at https://github.com/ilpincy/argos3/README.txt. However please note that in addition 
 to the libraries required to compile ARGoS, ARGoS-ASV also requires Eigen3 library development 
 files (libeigen3-dev; see http://eigen.tuxfamily.org/).
+
+Fast compiling instructions
+~~~~~~~~~~~~~~~~~~~~~~~
+
+$ cd argos3-asv
+$ mkdir build_simulator
+$ cd build_simulator
+$ cmake ../src
+$ make
+$ make doc
+$ make install doc
+$ make install
 
 
 Running the ARGoS-ASV simulator
