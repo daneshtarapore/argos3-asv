@@ -59,7 +59,7 @@ Compiling the example
  $ make
 
 Running examples
-----------------
+~~~~~~~~~~~~~~~~
 
  $ cd argos3-asv/examples
  $ argos3 -c experiments/asv_1.argos
