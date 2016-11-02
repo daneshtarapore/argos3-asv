@@ -36,14 +36,14 @@ files (libeigen3-dev; see http://eigen.tuxfamily.org/).
 Fast compiling instructions
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-$ cd argos3-asv
-$ mkdir build_simulator
-$ cd build_simulator
-$ cmake ../src
-$ make
-$ make doc
-$ make install doc
-$ make install
+ $ cd argos3-asv
+ $ mkdir build_simulator
+ $ cd build_simulator
+ $ cmake ../src
+ $ make
+ $ make doc
+ $ make install doc
+ $ make install
 
 
 Running the ARGoS-ASV simulator
@@ -52,15 +52,15 @@ Running the ARGoS-ASV simulator
 Compiling the example
 ~~~~~~~~~~~~~~~~~~~~~
 
-$ cd argos3-asv/examples
-$ mkdir build
-$ cd build
-$ cmake ..
-$ make
+ $ cd argos3-asv/examples
+ $ mkdir build
+ $ cd build
+ $ cmake ..
+ $ make
 
-Running the example
-~~~~~~~~~~~~~~~~~~~
+Running examples
+----------------
 
-$ cd argos3-asv/examples
-$ argos3 -c experiments/asv_1.argos
+ $ cd argos3-asv/examples
+ $ argos3 -c experiments/asv_1.argos
 
