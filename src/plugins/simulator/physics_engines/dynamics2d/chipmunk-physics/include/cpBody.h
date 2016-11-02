@@ -264,7 +264,7 @@ void cpBodyEachArbiter(cpBody *body, cpBodyArbiterIteratorFunc func, void *data)
 /// Acceleration is computed along x-axis in f_px, y-axis in f_py, and rotational acceleration about z-axis in f_pw
 void cpASVBodyInverseDynamics(cpBody *body);
 
-/// Danesh write something here
+/// Update the velocity of the control body -- the kinetic body with infinite mass and moment. As the velocity of the control body may change during the update interations of the Chipmunk physics engine, this function allows the trajectory of the controlled body (the actual body of the ASV) to be better modelled.  
 void cpControlBodyUpdateVelocity(cpBody *body, cpFloat dt);
 
 ///@}

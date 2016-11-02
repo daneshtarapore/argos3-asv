@@ -76,7 +76,7 @@ struct cpSpace {
 	/// By default it points to a statically allocated cpBody in the cpSpace struct.
 	cpBody *staticBody;
 
-    /// Danesh add something here
+    /// An array of control bodies added to the Space. This allows us to udate the velocity of the control bodies in the Chipmunk step cycle, thus allowing the resulting controlled bodies velocities to be better approximated.
     cpArray *controlbodies;
 	
 	CP_PRIVATE(cpTimestamp stamp);
@@ -184,7 +184,7 @@ cpShape *cpSpaceAddStaticShape(cpSpace *space, cpShape *shape);
 cpBody *cpSpaceAddBody(cpSpace *space, cpBody *body);
 /// Add a constraint to the simulation.
 cpConstraint *cpSpaceAddConstraint(cpSpace *space, cpConstraint *constraint);
-/// Danesh add something here
+/// Add a control body (the kinetic body with infinte mass and moment) to the simulation space
 cpBody *cpSpaceAddControlBody(cpSpace *space, cpBody *body);
 
 /// Remove a collision shape from the simulation.
@@ -193,7 +193,7 @@ void cpSpaceRemoveShape(cpSpace *space, cpShape *shape);
 void cpSpaceRemoveStaticShape(cpSpace *space, cpShape *shape);
 /// Remove a rigid body from the simulation.
 void cpSpaceRemoveBody(cpSpace *space, cpBody *body);
-/// Danesh write something here.
+/// Remove the control body from the space.
 void cpSpaceRemoveControlBody(cpSpace *space, cpBody *body);
 /// Remove a constraint from the simulation.
 void cpSpaceRemoveConstraint(cpSpace *space, cpConstraint *constraint);
