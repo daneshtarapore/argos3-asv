@@ -1,0 +1,40 @@
+ARGoS README
+=============
+:Author: Danesh Tarapore
+:Email:  daneshtarapore@gmail.com
+:Date:   October 16th, 2016
+
+What is ARGoS-ASV?
+---------------
+
+ARGoS-ASV is a plugin that implements an Autonomous Surface Vehicle (ASV) robot in ARGoS. 
+The surface vehicle implemented is a differential drive mono-hull boat. The ARGoS-ASV contains 
+the software modules for the 2D simulated version of this ASV. Depending on the needs of the 
+user, the capabilities of the basic model of the ASV can be enhanced with the following 
+extensions: a compass, GPS position sensor, range-and-bearing sensor, a Wi-Fi communication 
+module, and bumper sensors on the front hull of the ASV.
+
+
+Downloading ARGoS-ASV
+------------------
+
+You can download the development sources of ARGoS-ASV through git:
+
+ $ git clone https://github.com/daneshtarapore/argos3-asv.git argos-asv
+
+Compiling ARGoS
+----------------
+
+Requirements and compiling instructions
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+The requirements and compiling instructions for ARGoS-ASV are the same as that of the ARGoS simulator, 
+described at https://github.com/ilpincy/argos3/README.txt. However please note that in addition 
+to the libraries required to compile ARGoS, ARGoS-ASV also requires Eigen3 library development 
+files (libeigen3-dev; see http://eigen.tuxfamily.org/).
+
+
+Running the ARGoS-ASV simulator
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+TODO

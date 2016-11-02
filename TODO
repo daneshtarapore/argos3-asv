@@ -1,0 +1,8 @@
+
+- Collision shape of mono-hull ASV and its rendering
+
+- Incorporate ASV sensors: compass, GPS position sensor, range-and-bearing 
+sensor, a Wi-Fi communication module, and bumper sensors on the front hull.
+
+- Provide a example code for a swarm of ASVs 
+
