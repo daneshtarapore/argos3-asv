@@ -4,8 +4,7 @@
 # argos3/plugins/simulator/visualizations/qt-opengl/models
 set(ARGOS3_HEADERS_PLUGINS_SIMULATOR_VISUALIZATIONS_QTOPENGL_MODELS
   models/qtopengl_box.h
-  models/qtopengl_cylinder.h
-  models/qtopengl_light.h)
+  models/qtopengl_cylinder.h)
 # argos3/plugins/simulator/visualizations/qt-opengl
 # moc-headers processed by Qt's MOC utility
 set(ARGOS3_MOC_HEADERS_PLUGINS_SIMULATOR_VISUALIZATIONS_QTOPENGL
@@ -55,7 +54,6 @@ set(ARGOS3_SOURCES_PLUGINS_SIMULATOR_VISUALIZATIONS_QTOPENGL
   ${ARGOS3_MOC_SOURCES_PLUGINS_SIMULATOR_VISUALIZATIONS_QTOPENGL}
   models/qtopengl_box.cpp
   models/qtopengl_cylinder.cpp
-  models/qtopengl_light.cpp
   qtopengl_application.cpp
   qtopengl_camera.cpp
   qtopengl_main_window.cpp

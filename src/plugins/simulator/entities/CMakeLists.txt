@@ -5,6 +5,7 @@
 set(ARGOS3_HEADERS_PLUGINS_SIMULATOR_ENTITIES
   box_entity.h
   cylinder_entity.h
+  gripper_equipped_entity.h
   led_entity.h
   led_equipped_entity.h
   rab_equipped_entity.h
@@ -18,6 +19,7 @@ set(ARGOS3_SOURCES_PLUGINS_SIMULATOR_ENTITIES
   ${ARGOS3_HEADERS_PLUGINS_SIMULATOR_ENTITIES}
   box_entity.cpp
   cylinder_entity.cpp
+  gripper_equipped_entity.h
   led_entity.cpp
   led_equipped_entity.cpp
   rab_equipped_entity.cpp
