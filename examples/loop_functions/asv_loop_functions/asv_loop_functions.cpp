@@ -40,7 +40,7 @@ void CASVLoopFunctions::Destroy()
 
 CColor CASVLoopFunctions::GetFloorColor(const CVector2& c_position_on_plane)
 {
-   return CColor::WHITE;
+   return CColor::BLUE;
 }
 
 /****************************************/
