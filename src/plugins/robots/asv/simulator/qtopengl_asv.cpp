@@ -88,6 +88,21 @@ namespace argos
    /****************************************/
    /****************************************/
 
+   void CQTOpenGLASV::SetGrayPlasticMaterial()
+   {
+      const GLfloat pfColor[]     = {   0.4f, 0.4f, 0.4f, 1.0f };
+      const GLfloat pfSpecular[]  = {   0.9f, 0.9f, 0.9f, 1.0f };
+      const GLfloat pfShininess[] = { 100.0f                   };
+      const GLfloat pfEmission[]  = {   0.0f, 0.0f, 0.0f, 1.0f };
+      glMaterialfv(GL_FRONT_AND_BACK, GL_AMBIENT_AND_DIFFUSE, pfColor);
+      glMaterialfv(GL_FRONT_AND_BACK, GL_SPECULAR,            pfSpecular);
+      glMaterialfv(GL_FRONT_AND_BACK, GL_SHININESS,           pfShininess);
+      glMaterialfv(GL_FRONT_AND_BACK, GL_EMISSION,            pfEmission);
+   }
+
+   /****************************************/
+   /****************************************/
+
    void CQTOpenGLASV::SetGreenPlasticMaterial()
    {
       const GLfloat pfColor[]     = {   0.0f, 1.0f, 0.0f, 1.0f };
@@ -154,7 +169,7 @@ namespace argos
    void CQTOpenGLASV::RenderBody()
    {
       /* Set material */
-      SetGreenPlasticMaterial();
+      SetGrayPlasticMaterial(); //      SetGreenPlasticMaterial();
 
       CVector2 cVertex(BODY_RADIUS, 0.0f);
       CRadians cAngle(-CRadians::TWO_PI / m_unVertices);

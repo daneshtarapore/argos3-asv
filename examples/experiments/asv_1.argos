@@ -96,6 +96,13 @@
 
   </controllers>
 
+  <!-- ****************** -->
+  <!-- * Loop functions * -->
+  <!-- ****************** -->
+  <loop_functions library="build/loop_functions/asv_loop_functions/libasv_loop_functions"
+                  label="asv_loop_functions">
+  </loop_functions>
+
   <!-- *********************** -->
   <!-- * Arena configuration * -->
   <!-- *********************** -->
@@ -135,13 +142,6 @@
       <body position="0,0,0" orientation="0,0,0" />
       <controller config="atc"/>
     </asv>
-
-    <!-- Place another asv in the environment -->
-    <asv id="asv_1">
-      <body position="0.9,0,0" orientation="0,0,0" />
-      <controller config="atc"/>
-    </asv>
-
   </arena>
 
   <!-- ******************* -->
@@ -189,7 +189,14 @@
       $ argos3 -q visualizations
   -->
   <visualization>
-    <qt-opengl />
+    <qt-opengl>
+      <camera>
+        <placement idx="0"
+                   position="0,0,4.34"
+                   look_at="0,0,0"
+                   lens_focal_length="20" />
+      </camera>
+      <user_functions label="asv_qt_user_functions" />
+    </qt-opengl>
   </visualization>
-
 </argos-configuration>

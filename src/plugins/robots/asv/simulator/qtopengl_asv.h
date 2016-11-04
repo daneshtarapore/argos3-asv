@@ -35,6 +35,8 @@ namespace argos
 
    protected:
 
+      /** Sets a gray plastic material */
+      void SetGrayPlasticMaterial();
       /** Sets a green plastic material */
       void SetGreenPlasticMaterial();
       /** Sets a red plastic material */

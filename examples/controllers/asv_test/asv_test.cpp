@@ -62,18 +62,18 @@ void CASVTest::ControlStep()
 {
     std::cout << m_fSimulationClockTick << std::endl;
 
-    if((this->GetId().compare("asv_1") == 0) && (m_fSimulationClockTick < 10.0f))
+    if((this->GetId().compare("asv_0") == 0) && (m_fSimulationClockTick < 100.0f))
     {
-        /* Go straight */
-        m_pcPropellers->SetPropellerThrust(13.0f, 13.0f);
+        /* Turn */
+        m_pcPropellers->SetPropellerThrust(6.0f, 0.0f);
         m_pcPropellers->SetPropellerAngle(0);
     }
     else
     {
+        /* Stop */
         m_pcPropellers->SetPropellerThrust(0.0f, 0.0f);
         m_pcPropellers->SetPropellerAngle(0);
     }
-
     m_fSimulationClockTick++;
 }
 
