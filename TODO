@@ -6,3 +6,6 @@ sensor, a Wi-Fi communication module, and bumper sensors on the front hull.
 
 - Provide a example code for a swarm of ASVs 
 
+- Implement the MAP-Elites algorithm for argos3-asv, or interface argos3-asv with sferes_v2
+
+- Interface argos3-asv with nn2 neural net library
